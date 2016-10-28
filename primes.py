@@ -33,3 +33,30 @@ def isPrime(n):
 print genPrimes(10)
 
 print isPrime(4)
+
+
+
+ """
+ASYMPTOTIC ANALYSIS
+
+    primes = [] ------------------------------------->bigO(1)
+    numbers = [x for x in range(2,n)] --------------->bigO(n)
+    for i in numbers:-------------------------------->bigO(n^2)
+        if isPrime(i):2 ----------------------------->bigO(1)
+            primes.append(i) ------------------------>bigO(1)
+
+
+    return primes  ---------------------------------> bigO(1)
+    
+
+    =======> bigO(1) + bigO(n) +bigO(n^2) + bigO(1) + bigO(1)
+
+
+
+
+
+
+
+
+
+ """
