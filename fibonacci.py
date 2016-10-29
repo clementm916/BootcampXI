@@ -2,9 +2,15 @@
 def seriesFibonnaci(n):
 	""" Function takes integer n as an input and returns a sequence of fibonnaci numbers to that point """
 	series =[]
+	fine_series =[]
 	for i in range(n):
 		series.append(Fibonnaci(i))
-	return series
+	for i in series:
+		if i<n:
+			fine_series.append(i)
+		elif i>n:
+			break
+	return fine_series
 
 
 
@@ -29,7 +35,7 @@ def Fibonnaci(n):
 
 
 
-print seriesFibonnaci(5)
+print seriesFibonnaci(10)
 
 
 """
